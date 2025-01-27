@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ayuntamiento de Cerdanyola del Vallès</title>
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Contacto - Ayuntamiento de Cerdanyola del Vallès</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="principal.html">Inicio</a></li>
+        <li><a href="galeria.html">Galeria de Imagenes</a></li>
+        <li><a href="medidas.html">Medidas medioambientales</a></li>
+        <li><a href="contatcto.html">Contacto</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+        <li><a href="informacion.html">Información UE y agenda 2030</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <div class="section">
+        <h2>Datos de Contacto</h2>
+        <p><strong>Dirección:</strong> Plaza de la Vila, 1, 08290 Cerdanyola del Vallès, Barcelona</p>
+        <p><strong>Teléfonos:</strong></p>
+        <ul>
+            <li>Información general: 93 591 12 34</li>
+            <li>Atención al ciudadano: 93 591 45 67</li>
+            <li>Emergencias medioambientales: 900 123 456</li>
+        </ul>
+        <p><strong>Correo Electrónico:</strong></p>
+        <ul>
+            <li>Información general: <a href="mailto:info@cerdanyola.cat">info@cerdanyola.cat</a></li>
+            <li>Medio Ambiente: <a href="mailto:mediambient@cerdanyola.cat">mediambient@cerdanyola.cat</a></li>
+        </ul>
+        <p><strong>Horarios de atención:</strong></p>
+        <ul>
+            <li>Lunes a Viernes: 9:00 - 14:00</li>
+            <li>Jueves: 16:30 - 19:30</li>
+            <li>Sábados, domingos y festivos: Cerrado</li>
+        </ul>
+    </div>
+
+    <!-- Mapa de ubicación -->
+    <div class="section map-container">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.6101803372635!2d2.1381693752117976!3d41.49105018956016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bdf6bf6f0a07%3A0xc575c9ca2cd39114!2sAyuntamiento%20de%20Cerdanyola%20del%20Vall%C3%A8s!5e0!3m2!1ses!2ses!4v1736963430365!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Formulario de Denuncia Medioambiental -->
+    <div class="section">
+        <h2>Formulario de Denuncia Medioambiental</h2>
+        <p>Si deseas realizar una denuncia sobre actividades que afecten negativamente al medio ambiente, por favor, rellena el siguiente formulario:</p>
+
+        <form action="/submit_form" method="POST" enctype="multipart/form-data">
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono de contacto (opcional):</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="description">Descripción de la denuncia:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="location">Ubicación del incidente:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="file">Adjuntar archivo o imagen (opcional):</label>
+            <input type="file" id="file" name="file">
+
+            <button type="submit">Enviar denuncia</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
